@@ -1,115 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>科科快餐點餐價格表</title>
-    <!--答案1-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/seo-and-marketing-18/50/50-512.png" type="image/ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>RWD-B10956016 期末作業</title>
     <style>
-        h1 {
-            font-size: 36px;
-            font-weight: bolder;
-            color: blue;
-            text-align: center;
+        body {
+            font-family: 'Noto Sans JP';
         }
         
-        table {
+        .navbar {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        
+        .navbar img {
+            width: 80%;
+        }
+        
+        .navbar-nav {
             margin: auto;
         }
         
-        #tableCaption {
-            border-style: dashed;
-            border-width: 1px;
+        .jumbotron {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.8);
+            background-image: url('https://mis.npust.edu.tw/wp-content/uploads/2013/01/v.jpg');
+            background-position: center;
+            background-size: cover;
         }
         
-        td {
-            border-style: dotted;
-            border-width: 1px;
-            padding: 10px;
-            color: green;
-        }
-        /* //答案 2D*/
-        
-        .content {
-            color: green;
-            font-family: Arial;
-            font-size: 18px;
+        .jumbotron hr {
+            margin: 5%;
+            height: 0.25rem;
+            color: rgba(255, 255, 255, 1);
         }
         
-        #tableTitle {
-            font-weight: bolder;
-            font-size: 18px;
-            color: purple;
-            text-align: center
+        .teacher {
+            padding-left: 5%;
+            padding-right: 5%;
         }
         
-        th {
-            font-weight: bolder;
-            font-size: 18px;
-            color: purple;
+        .teacher .col-12 {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        
+        .card {
+            margin: auto;
+        }
+        
+        .title {
             text-align: center;
-            border-style: dotted;
-            border-width: 1px;
-            padding: 10px;
+            color: crimson;
+            font-size: 150%;
         }
     </style>
-    <script>
-    </script>
 </head>
 
 <body>
-    <h1>MIS快餐點餐價格表</h1>
-    <table>
-        <tr>
-            <td></td>
-            <th>5號餐<br>8元</th>
-            <th>4號餐<br>11元</th>
-            <th>3號餐<br>14元</th>
-            <th>2號餐<br>17元</th>
-            <th>1號餐<br>20元</th>
-        </tr>
-        <tr>
-            <th>3</th>
-            <td>3*8=24</td>
-            <td>3*11=33</td>
-            <td>3*14=42</td>
-            <td>3*17=51</td>
-            <td>3*20=60</td>
-        </tr>
-        <tr>
-            <th>4</th>
-            <td>4*8=32</td>
-            <td>4*11=44</td>
-            <td>4*14=56</td>
-            <td>4*17=68</td>
-            <td>4*20=80</td>
-        </tr>
-        <tr>
-            <th>5</th>
-            <td>5*8=40</td>
-            <td>5*11=55</td>
-            <td>5*14=70</td>
-            <td>5*17=85</td>
-            <td>5*20=100</td>
-        </tr>
-        <tr>
-            <th>6</th>
-            <td>6*8=48</td>
-            <td>6*11=66</td>
-            <td>6*14=84</td>
-            <td>6*17=102</td>
-            <td>6*20=120</td>
-        </tr>
-        <tr>
-            <th>7</th>
-            <td>7*8=56</td>
-            <td>7*11=77</td>
-            <td>7*14=98</td>
-            <td>7*17=119</td>
-            <td>7*20=144</td>
-        </tr>
-    </table>
+    <!-- Nav區塊 --->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#history">苗栗歷史</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#geography">苗栗地理</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#eat">苗栗隱藏版小吃</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#attractions">苗栗景點</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Jumbotron區塊 --->
+    <div id="history">
+        <p class="title">苗栗歷史</p>
+        <hr>
+        <p>&emsp;&emsp;1661年（明永曆15年）以前，曾歷經荷蘭、西班牙等國短暫治台。鄭成功驅逐荷蘭後開始有計畫進行屯墾，將苗栗歸屬天興縣管理。1670年（明永曆24年），劉國軒率部眾墾殖蓬山八社、後壠五社（即今通霄、苑裡、後龍、竹南一帶），為漢人早期開拓苗栗的發端。</p>
+        <p>&emsp;&emsp;鄭克塽降清後，清政府改天興縣為諸羅縣。1889年（清光緒15年）苗栗始設縣。1895年日本統治台灣後，苗栗縣遭廢除。1901年到1908年間，另置苗栗廳，1920年廢廳置州郡，今苗栗縣轄區被劃分為苗栗郡、竹南郡、大湖郡，屬新竹州管轄。二戰後初期隸屬新竹縣之一部，迨1950年（民國39年）台灣施行地方自治後，苗栗縣再次建置設縣，其行政區域沿用至今。</p>
+    </div>
+    <div id="geography">
+        <p class="title">苗栗地理</p>
+        <hr>
+        <P>　本縣位於臺灣的中北部，北邊和東北邊與新竹縣為鄰，南邊和東南邊隔著大安溪、雪山山脈與臺中市接壤，西濱臺灣海峽。最東是泰安鄉梅園村的大霸尖山；最西是苑裡鎮房裡海岸；最南是卓蘭鎮內灣里南面；最北是竹南鎮崎頂里北側；全縣中心位置在獅潭鄉豐林村。全縣東西寬約六十四公里，南北長約五十公里，面積共有1820.3149平方公里。海岸線長度自竹南鎮崎頂北面起，向南延伸至苑裡鎮房裡海岸南面海岸為止，全長約五十公里，外型頗似一顆鑽石。</P>
+    </div>
+    <!-- Card區塊 --->
+    <div id="eat">
+        <p class="title">苗栗隱藏版小吃</p>
+        <hr>
+    </div>
+    <div class="teacher container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://lh3.googleusercontent.com/-HPwDARXlwrdsniRKapGuFcI5rNnCBmn6NwUKTgsrcWwt5nRSvx8ckyjqR8s1fN4aV-XKSi-29_gPimzb-l9xaKQQ4R1yAaw=s600" class="card-img-top" alt="擔仔麵">
+                    <div class="card-body">
+                        <p class="card-text">晶品小吃</p>
+                        <p>晶品小吃是一家外地人不容易發現的巷弄小店，雖然位置不起眼，但是裡面的餐點可是真 正道地的客家味！一般市面上比較常看到水晶餃與麵分開賣，這家有提供合併的水晶餃麵 還不錯。水晶餃外觀看起來晶瑩剔透，口感彈Q帶軟，裡面比較特別的是包了芹菜，吃起 來有獨特的香氣，是大都市很難找到的好味道。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.deliveryhero.io/image/fd-tw/Products/1905732.jpg?width=500" class="card-img-top" alt="碗粿">
+                    <div class="card-body">
+                        <p class="card-text">阿富水煎包</p>
+                        <p>苗栗市光復路上有一家很特別的店，名為阿富水煎包，這裡除了傳統常見的早餐餐點外， 還提供比較少見到的炸蛋餅</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://img.huablog.tw/uploads/20210316151441_42.jpg" class="card-img-top" alt="棺材板">
+                    <div class="card-body">
+                        <p class="card-text">天涯海餃</p>
+                        <p>天涯海餃是一間很特別的餃子店，有少見的四季豆煎餃、以及韭菜蝦仁煎餃！四季豆煎餃 裡面有包四季豆、韭菜、豬肉，四季豆脆甜的口感與韭菜特有的香味融合得很好，微微的 香甜口感巧妙地綜合掉韭菜的強烈氣味，脆勁也增添了食用的爽感。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="attractions">
+        <p class="title">苗栗景點</p>
+        <hr>
+    </div>
+    <div class="teacher container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/%E5%B4%8E%E9%A0%82%E5%AD%90%E6%AF%8D%E9%9A%A7%E9%81%93.jpg" class="card-img-top" alt="安平古堡">
+                    <div class="card-body">
+                        <p class="card-text">崎頂子母隧道</p>
+                        <p>崎頂隧道是最近在IG上滿紅的景點，隧道外圍被綠葉包覆，後方更是一片綠蔭道路，一眼望去真的頗有《神隱少女》中的隧道之感，過去也多次作為列車廣告場景使用，拍起美照更是不得了充滿意境感。此外，在其中一邊的道口牆上，還可以看到零星的坑洞，那是過去二戰太平洋戰爭末期留下的痕跡，崎頂隧道真正與竹南一起見證了一切歷史。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="http://9.blog.xuite.net/9/b/0/2/12143622/blog_664768/txt/60621141/0.jpg" class="card-img-top" alt="赤崁樓">
+                    <div class="card-body">
+                        <p class="card-text">龍鳳漁港</p>
+                        <p>同樣位於竹南鎮的龍鳳漁港，同時擁有漁港船隻並列與戲水沙灘兩種景觀，而在夕陽時分，當天空都染上一層橘黃色時，更是感嘆景觀之壯麗與美好，台灣真的好美啊！既然有漁港就不能沒有魚市啦！新鮮捕捉的海產可以直接在旁邊魚市場購買或食用，生魚片一口咬下超鮮超美味，真的不能錯過。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://image.kkday.com/v2/image/get/w_960%2Cc_fit%2Cq_55%2Ct_webp/s1.kkday.com/product_103371/20200910061227_hNvLI/jpg" class="card-img-top" alt="瓦盤鹽田">
+                    <div class="card-body">
+                        <p class="card-text">烏嘎彥竹林</p>
+                        <p>烏嘎彥竹林被認為是泰安的竹林秘境，高聳的兩排嫩綠竹林自成一條天然隧道，此時陽光再從頭頂的空隙中灑下，實在是美得令人著迷，走在其中宛如走進日本京都嵐山，如此美景亦曾吸引日本微電影到此取景。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://photo.travelking.com.tw/scenery/01A55262-F431-44A4-87F9-61CB63ED8AF4_e.jpg" class="card-img-top" alt="全台首學-孔廟">
+                    <div class="card-body">
+                        <p class="card-text">龍騰斷橋</p>
+                        <p>龍騰斷橋原名「魚藤坪橋」，建造於20世紀初，當時是日治時期，因此建造時也十足呈現了日本人對品質的堅持，紅磚水泥打造的拱橋，雖然沒有鋼筋卻相當牢固。這麼美又堅實的拱橋卻不幸於1935年的新竹台中大地震中被嚴重毀損，魚藤坪橋成為了「魚藤坪斷橋」。後來，政府在不遠處新建了第二代魚藤坪橋，也因此第一代就以斷橋的型態維持了下來，多虧結構的堅固，橋墩至今依然屹立不搖，磚紅色壯觀的拱橋就這樣成為了頗受歡迎的觀光景點呢！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 
 </html>
